@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="description" content="EverNest helps families stay connected, share everyday moments, and make caring for one another feel a little simpler.">
+  <title>EverNest — A little closer, every day</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="EverNest">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <style>
+    :root{--ink:#203b3b;--muted:#586c68;--green:#477b68;--green-dark:#315b4d;--sage:#e5eee5;--cream:#f7f5ef;--gold:#e7bd72;--white:#fff;--line:#e2e7df;--shadow:0 18px 50px rgba(32,59,59,.09)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--cream);color:var(--ink);font-family:ui-rounded,"Segoe UI",system-ui,-apple-system,sans-serif;font-size:18px;line-height:1.65}a{color:inherit}button,a{touch-action:manipulation}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #b87925;outline-offset:4px}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.skip{position:absolute;left:-9999px;top:8px;background:#fff;padding:12px;z-index:20}.skip:focus{left:8px}.topbar{position:sticky;top:0;z-index:10;background:rgba(247,245,239,.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(32,59,59,.08)}.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:78px}.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-size:1.35rem;font-weight:800;letter-spacing:-.04em}.brand img{width:42px;height:42px}.navlinks{display:flex;align-items:center;gap:25px}.navlinks a{text-decoration:none;font-size:.92rem;font-weight:650}.navlinks a:hover{color:var(--green)}.menu-toggle{display:none;border:1px solid var(--line);border-radius:12px;background:#fff;padding:10px 14px;font:inherit;color:var(--ink)}.btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;min-height:54px;padding:13px 22px;border:2px solid var(--green);border-radius:16px;background:var(--green);color:white;text-decoration:none;font-size:1rem;font-weight:750;cursor:pointer;transition:transform .15s,background .15s}.btn:hover{background:var(--green-dark);border-color:var(--green-dark);transform:translateY(-1px)}.btn.secondary{background:transparent;color:var(--green-dark)}.btn.secondary:hover{background:var(--sage)}.hero{padding:76px 0 82px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;align-items:center;gap:64px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--green-dark);font-size:.83rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.eyebrow:before{content:"";width:26px;height:3px;border-radius:9px;background:var(--gold)}h1,h2,h3,p{margin-top:0}h1{max-width:650px;margin:18px 0 20px;font-size:clamp(2.65rem,5.5vw,4.7rem);line-height:1.05;letter-spacing:-.065em}h1 em{color:var(--green);font-style:normal}.lead{max-width:570px;color:var(--muted);font-size:1.2rem;line-height:1.7}.actions{display:flex;flex-wrap:wrap;gap:13px;margin:28px 0 20px}.micro{color:var(--muted);font-size:.88rem}.hero-art{position:relative;min-height:420px;display:grid;place-items:center}.sun{position:absolute;width:min(390px,90%);aspect-ratio:1;border-radius:50%;background:#e7eee2;right:3%;top:3%}.nest-card{position:relative;width:min(400px,100%);padding:30px;border-radius:30px;background:#fff;box-shadow:var(--shadow);transform:rotate(1deg)}.nest-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:24px}.mini-brand{font-weight:800;letter-spacing:-.03em}.status{padding:6px 11px;border-radius:999px;background:#edf5e9;color:#38684e;font-size:.78rem;font-weight:750}.family-illustration{display:grid;grid-template-columns:1fr 1fr;gap:12px}.person{min-height:140px;display:flex;flex-direction:column;justify-content:center;align-items:center;border-radius:22px;background:#f6e7d0;color:#6a4d35}.person:nth-child(2){background:#e1ecdf;color:#365e4a}.person:nth-child(3){background:#e1eafa;color:#3c5779}.person:nth-child(4){background:#f5e2e5;color:#87505b}.face{font-size:2.8rem;line-height:1.3}.person span:last-child{font-size:.88rem;font-weight:750}.checkin{display:flex;align-items:center;gap:13px;margin-top:18px;padding:14px 16px;border:1px solid var(--line);border-radius:17px}.check-icon{display:grid;place-items:center;width:40px;height:40px;flex:none;border-radius:13px;background:var(--sage);font-size:1.2rem}.checkin strong{display:block;font-size:.95rem}.checkin small{color:var(--muted)}.floating-note{position:absolute;right:-6px;bottom:18px;padding:14px 17px;border-radius:17px;background:#fff;box-shadow:var(--shadow);font-size:.9rem;font-weight:750;transform:rotate(-3deg)}.section{padding:82px 0}.section.white{background:#fff}.section-head{max-width:690px;margin:0 auto 42px;text-align:center}.section-head h2{margin:12px 0 14px;font-size:clamp(2rem,4vw,3rem);line-height:1.12;letter-spacing:-.05em}.section-head p{color:var(--muted);font-size:1.08rem}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.feature{padding:28px;border:1px solid var(--line);border-radius:24px;background:#fff}.white .feature{background:var(--cream)}.feature-icon{display:grid;place-items:center;width:56px;height:56px;margin-bottom:19px;border-radius:18px;background:var(--sage);font-size:1.6rem}.feature h3{margin-bottom:9px;font-size:1.25rem;letter-spacing:-.025em}.feature p{margin-bottom:0;color:var(--muted);font-size:1rem}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;counter-reset:step}.step{position:relative;padding:4px 12px 10px 0}.step:before{counter-increment:step;content:"0" counter(step);display:grid;place-items:center;width:48px;height:48px;margin-bottom:19px;border-radius:16px;background:var(--green);color:#fff;font-weight:850}.step h3{margin-bottom:8px}.step p{color:var(--muted);font-size:1rem}.promise{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center;padding:40px;border-radius:30px;background:var(--sage)}.promise h2{margin:12px 0;font-size:clamp(2rem,3.6vw,2.8rem);line-height:1.13;letter-spacing:-.05em}.promise p{color:var(--muted)}.promise-list{display:grid;grid-template-columns:1fr 1fr;gap:14px}.promise-item{display:flex;align-items:flex-start;gap:10px;font-weight:650;font-size:1rem}.tick{color:var(--green-dark);font-weight:900}.faq{max-width:800px;margin:auto}.faq details{padding:20px 0;border-bottom:1px solid var(--line)}.faq summary{cursor:pointer;font-weight:750;font-size:1.08rem}.faq details p{margin:12px 0 0;color:var(--muted)}.cta{padding:54px 32px;text-align:center;border-radius:30px;background:var(--ink);color:#fff}.cta h2{margin:0 0 14px;font-size:clamp(2rem,4vw,3rem);letter-spacing:-.05em}.cta p{max-width:650px;margin:0 auto 25px;color:#d9e4dd}.cta .btn{background:#fff;border-color:#fff;color:var(--ink)}.cta .btn:hover{background:#edf5e9}.footer{padding:36px 0 28px}.footer-main{display:flex;justify-content:space-between;align-items:center;gap:25px;padding-bottom:22px;border-bottom:1px solid var(--line)}.footer p,.footer a{color:var(--muted);font-size:.9rem}.footer-links{display:flex;flex-wrap:wrap;gap:18px}.footer-links a{text-decoration:none}.fineprint{padding-top:17px;color:var(--muted);font-size:.8rem}.notice{display:none;margin-top:15px;padding:16px 18px;border:1px solid #c8d9ca;border-radius:16px;background:#fff;color:var(--ink);font-size:.96rem}.notice.show{display:block}.notice ol{padding-left:23px;margin-bottom:0}.notice p{margin-bottom:8px}.notice button{border:0;background:transparent;text-decoration:underline;color:var(--green-dark);font:inherit;font-weight:700;cursor:pointer}.icon{width:19px;height:19px}
+    @media(max-width:850px){.hero-grid{grid-template-columns:1fr;gap:25px}.hero{padding-top:55px}.hero-copy{text-align:center}.hero-copy .lead{margin-inline:auto}.hero-copy .eyebrow{justify-content:center}.actions{justify-content:center}.hero-art{min-height:390px}.cards{grid-template-columns:1fr 1fr}.promise{grid-template-columns:1fr;gap:18px}.navlinks{gap:14px}.navlinks a{font-size:.85rem}}
+    @media(max-width:620px){body{font-size:17px}.wrap{width:min(100% - 30px,1120px)}.nav{min-height:68px}.menu-toggle{display:block}.navlinks{display:none;position:absolute;left:0;right:0;top:68px;padding:16px 22px 22px;background:var(--cream);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.navlinks a{padding:8px 0;font-size:1rem}.navlinks .btn{margin-top:5px}.hero{padding:43px 0 50px}h1{font-size:clamp(2.6rem,12vw,3.6rem)}.lead{font-size:1.08rem}.hero-art{min-height:350px}.nest-card{padding:19px;border-radius:24px}.person{min-height:112px}.face{font-size:2.3rem}.floating-note{right:0;bottom:0}.section{padding:60px 0}.cards,.steps{grid-template-columns:1fr}.feature{padding:24px}.promise{padding:26px 22px}.promise-list{grid-template-columns:1fr}.cta{padding:40px 22px}.footer-main{align-items:flex-start;flex-direction:column;gap:12px}.actions .btn{width:100%}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="EverNest home"><img src="./icon.svg" alt="">EverNest</a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
+      <nav class="navlinks" id="navLinks" aria-label="Main navigation">
+        <a href="#features">What it can do</a><a href="#how">How it works</a><a href="#privacy">Our approach</a><a href="#faq">Questions</a>
+        <button class="btn" id="navInstall" type="button">Add EverNest</button>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">A little closer, every day</span>
+          <h1>Care feels better when we're <em>connected.</em></h1>
+          <p class="lead">EverNest is a welcoming place for families to stay in touch, share everyday moments, and make looking out for one another feel a little simpler.</p>
+          <div class="actions"><button class="btn" id="heroInstall" type="button">＋ Add EverNest to this device</button><a class="btn secondary" href="#features">Explore EverNest <span aria-hidden="true">↓</span></a></div>
+          <p class="micro">Designed around people, not complicated menus.</p>
+          <div class="notice" id="installNotice" role="status" aria-live="polite"></div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of a family staying connected">
+          <div class="sun"></div>
+          <div class="nest-card">
+            <div class="nest-top"><span class="mini-brand">Your family nest</span><span class="status">● Here for each other</span></div>
+            <div class="family-illustration">
+              <div class="person"><span class="face" aria-hidden="true">👵🏻</span><span>Grandma</span></div>
+              <div class="person"><span class="face" aria-hidden="true">👴🏼</span><span>Grandpa</span></div>
+              <div class="person"><span class="face" aria-hidden="true">👩🏽</span><span>Family</span></div>
+              <div class="person"><span class="face" aria-hidden="true">🧑🏻</span><span>Friends</span></div>
+            </div>
+            <div class="checkin"><span class="check-icon" aria-hidden="true">♡</span><div><strong>Little moments matter</strong><small>A hello can brighten someone's day.</small></div></div>
+          </div>
+          <div class="floating-note" aria-hidden="true">♡ Made for togetherness</div>
+        </div>
+      </div>
+    </section>
+    <section class="section white" id="features">
+      <div class="wrap">
+        <div class="section-head"><span class="eyebrow">A calmer kind of technology</span><h2>The important things, made simpler.</h2><p>EverNest is being built around the everyday ways families support each other—with clear choices, comfortable reading, and less digital clutter.</p></div>
+        <div class="cards">
+          <article class="feature"><div class="feature-icon" aria-hidden="true">💛</div><h3>Stay connected</h3><p>Make space for messages, shared photos, and the small moments that help loved ones feel close.</p></article>
+          <article class="feature"><div class="feature-icon" aria-hidden="true">🌿</div><h3>Gentle check-ins</h3><p>Make a daily hello feel easy, with a simple way to let family know you're doing okay.</p></article>
+          <article class="feature"><div class="feature-icon" aria-hidden="true">📅</div><h3>Keep life organized</h3><p>Bring appointments, helpful reminders, and everyday plans into a place that's easier to follow.</p></article>
+          <article class="feature"><div class="feature-icon" aria-hidden="true">📖</div><h3>Save the stories</h3><p>Keep family memories, life stories, and treasured moments to revisit and share over time.</p></article>
+          <article class="feature"><div class="feature-icon" aria-hidden="true">🤝</div><h3>Support each other</h3><p>Give families and trusted helpers a clearer way to coordinate the little things—respectfully.</p></article>
+          <article class="feature"><div class="feature-icon" aria-hidden="true">🔎</div><h3>Understand technology</h3><p>Offer friendly guidance and plain-language tips that help digital life feel less intimidating.</p></article>
+        </div>
+        <p class="micro" style="text-align:center;margin:25px 0 0">EverNest is currently a website starting point. Feature descriptions are goals, not claims that every feature is available today.</p>
+      </div>
+    </section>
+    <section class="section" id="how">
+      <div class="wrap">
+        <div class="section-head"><span class="eyebrow">Getting started</span><h2>Easy to find. Easy to come back to.</h2><p>No app store needed to try this website. Add EverNest to your device's home screen for a convenient shortcut.</p></div>
+        <div class="steps">
+          <article class="step"><h3>Open EverNest</h3><p>Visit this website on your phone, tablet, or computer using a modern browser.</p></article>
+          <article class="step"><h3>Add a shortcut</h3><p>Use the button above when supported, or your browser's “Add to Home Screen” or “Install” option.</p></article>
+          <article class="step"><h3>Come back anytime</h3><p>Open the EverNest icon like an app. Your browser may keep it in a separate app-style window.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section white" id="privacy">
+      <div class="wrap">
+        <div class="promise">
+          <div><span class="eyebrow">Built on trust</span><h2>Care should feel respectful, not intrusive.</h2><p>Technology that supports families should put people first. EverNest aims to make privacy, accessibility, and user choice part of the experience from the beginning.</p></div>
+          <div class="promise-list">
+            <div class="promise-item"><span class="tick">✓</span><span>Comfortable, readable text</span></div>
+            <div class="promise-item"><span class="tick">✓</span><span>Clear, straightforward navigation</span></div>
+            <div class="promise-item"><span class="tick">✓</span><span>Respect for individual choice</span></div>
+            <div class="promise-item"><span class="tick">✓</span><span>Privacy-conscious design goals</span></div>
+            <div class="promise-item"><span class="tick">✓</span><span>Works across screen sizes</span></div>
+            <div class="promise-item"><span class="tick">✓</span><span>No pressure to be tech-savvy</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="faq">
+      <div class="wrap">
+        <div class="section-head"><span class="eyebrow">Good to know</span><h2>Questions, answered simply.</h2></div>
+        <div class="faq">
+          <details><summary>Is EverNest an app yet?</summary><p>EverNest is starting as a website. On supported devices, you can add a shortcut to your home screen. This first version is a landing page and does not yet provide live messaging, medical reminders, or emergency monitoring.</p></details>
+          <details><summary>How do I add EverNest to my phone?</summary><p>Tap “Add EverNest to this device.” If your browser supports installation, it will offer the install prompt. On iPhone or iPad, open the site in Safari, tap Share, then choose “Add to Home Screen.” On Android, open the browser menu and look for “Install app” or “Add to Home screen.” Menu wording varies by browser.</p></details>
+          <details><summary>Will the shortcut work on a computer?</summary><p>On supported desktop browsers, the button may offer an install option. Otherwise, bookmark the page or use your browser's option to create an app shortcut if available.</p></details>
+          <details><summary>Does EverNest monitor health or contact emergency services?</summary><p>No. This website does not monitor health, detect falls, send caregiver alerts, or contact emergency services. Never rely on it for urgent or medical needs.</p></details>
+          <details><summary>Is my family's information stored here?</summary><p>This landing page does not ask for family or health information and has no account system. Before adding personal features, EverNest will need clear privacy information and appropriate security protections.</p></details>
+        </div>
+      </div>
+    </section>
+    <section class="section white">
+      <div class="wrap"><div class="cta"><h2>A little more connection starts here.</h2><p>Keep EverNest close by so it's easy to find when you want to visit again. Start with a simple shortcut—no complicated setup.</p><button class="btn" id="bottomInstall" type="button">＋ Add EverNest to this device</button><div class="notice" id="bottomNotice" role="status" aria-live="polite"></div></div></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-main"><a class="brand" href="#home"><img src="./icon.svg" alt="">EverNest</a><div class="footer-links"><a href="#features">Features</a><a href="#privacy">Our approach</a><a href="#faq">FAQ</a><a href="#home">Back to top ↑</a></div></div>
+      <div class="fineprint">© <span id="year"></span> EverNest. A little closer, every day.<br>EverNest is an early-stage project. Information on this page describes intended direction, not a promise of currently available services. This site is not a medical or emergency service.</div>
+    </div>
+  </footer>
+  <script>
+    const menuToggle=document.getElementById('menuToggle');
+    const navLinks=document.getElementById('navLinks');
+    menuToggle.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.textContent=open?'Close':'Menu';});
+    navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navLinks.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.textContent='Menu';}));
+    document.getElementById('year').textContent=new Date().getFullYear();
+    let installPrompt=null;
+    const noticeIds=['installNotice','bottomNotice'];
+    function showNotice(html){noticeIds.forEach(id=>{const el=document.getElementById(id);el.innerHTML=html;el.classList.add('show');});}
+    window.addEventListener('beforeinstallprompt',event=>{event.preventDefault();installPrompt=event;});
+    window.addEventListener('appinstalled',()=>{installPrompt=null;showNotice('<p><strong>EverNest was added to your device.</strong></p>');});
+    async function addShortcut(){
+      if(window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone){showNotice('<p><strong>EverNest is already installed.</strong></p>');return;}
+      if(installPrompt){installPrompt.prompt();const result=await installPrompt.userChoice;installPrompt=null;if(result.outcome==='accepted')showNotice('<p><strong>Thanks for adding EverNest!</strong></p>');else showNotice('<p>You can add EverNest whenever you are ready. Your browser may offer this option in its menu.</p>');return;}
+      const isApple=/iphone|ipad|ipod/i.test(navigator.userAgent);
+      const isAndroid=/android/i.test(navigator.userAgent);
+      let instructions;
+      if(isApple){instructions='<p><strong>To add EverNest on iPhone or iPad:</strong></p><ol><li>Open this page in Safari.</li><li>Tap the Share button.</li><li>Choose “Add to Home Screen.”</li><li>Tap “Add.”</li></ol>';}
+      else if(isAndroid){instructions='<p><strong>To add EverNest on Android:</strong></p><ol><li>Open this page in Chrome or your preferred browser.</li><li>Open the browser menu (⋮).</li><li>Choose “Install app” or “Add to Home screen.”</li><li>Follow the on-screen steps.</li></ol>';}
+      else{instructions='<p><strong>To keep EverNest handy:</strong></p><ol><li>Look for “Install app” in your browser menu, if available.</li><li>Otherwise, bookmark this page for easy access.</li></ol>';}
+      showNotice(instructions);
+    }
+    ['heroInstall','navInstall','bottomInstall'].forEach(id=>document.getElementById(id).addEventListener('click',addShortcut));
+    if('serviceWorker' in navigator && location.protocol!=='file:'){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
+  </script>
+</body>
+</html>

@@ -14,6 +14,27 @@
   <style>
     :root{--ink:#203b3b;--muted:#586c68;--green:#477b68;--green-dark:#315b4d;--sage:#e5eee5;--cream:#f7f5ef;--gold:#e7bd72;--white:#fff;--line:#e2e7df;--shadow:0 18px 50px rgba(32,59,59,.09)}
     *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--cream);color:var(--ink);font-family:ui-rounded,"Segoe UI",system-ui,-apple-system,sans-serif;font-size:18px;line-height:1.65}a{color:inherit}button,a{touch-action:manipulation}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #b87925;outline-offset:4px}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.skip{position:absolute;left:-9999px;top:8px;background:#fff;padding:12px;z-index:20}.skip:focus{left:8px}.topbar{position:sticky;top:0;z-index:10;background:rgba(247,245,239,.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(32,59,59,.08)}.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:78px}.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-size:1.35rem;font-weight:800;letter-spacing:-.04em}.brand img{width:42px;height:42px}.navlinks{display:flex;align-items:center;gap:25px}.navlinks a{text-decoration:none;font-size:.92rem;font-weight:650}.navlinks a:hover{color:var(--green)}.menu-toggle{display:none;border:1px solid var(--line);border-radius:12px;background:#fff;padding:10px 14px;font:inherit;color:var(--ink)}.btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;min-height:54px;padding:13px 22px;border:2px solid var(--green);border-radius:16px;background:var(--green);color:white;text-decoration:none;font-size:1rem;font-weight:750;cursor:pointer;transition:transform .15s,background .15s}.btn:hover{background:var(--green-dark);border-color:var(--green-dark);transform:translateY(-1px)}.btn.secondary{background:transparent;color:var(--green-dark)}.btn.secondary:hover{background:var(--sage)}.hero{padding:76px 0 82px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;align-items:center;gap:64px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--green-dark);font-size:.83rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.eyebrow:before{content:"";width:26px;height:3px;border-radius:9px;background:var(--gold)}h1,h2,h3,p{margin-top:0}h1{max-width:650px;margin:18px 0 20px;font-size:clamp(2.65rem,5.5vw,4.7rem);line-height:1.05;letter-spacing:-.065em}h1 em{color:var(--green);font-style:normal}.lead{max-width:570px;color:var(--muted);font-size:1.2rem;line-height:1.7}.actions{display:flex;flex-wrap:wrap;gap:13px;margin:28px 0 20px}.micro{color:var(--muted);font-size:.88rem}.hero-art{position:relative;min-height:420px;display:grid;place-items:center}.sun{position:absolute;width:min(390px,90%);aspect-ratio:1;border-radius:50%;background:#e7eee2;right:3%;top:3%}.nest-card{position:relative;width:min(400px,100%);padding:30px;border-radius:30px;background:#fff;box-shadow:var(--shadow);transform:rotate(1deg)}.nest-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:24px}.mini-brand{font-weight:800;letter-spacing:-.03em}.status{padding:6px 11px;border-radius:999px;background:#edf5e9;color:#38684e;font-size:.78rem;font-weight:750}.family-illustration{display:grid;grid-template-columns:1fr 1fr;gap:12px}.person{min-height:140px;display:flex;flex-direction:column;justify-content:center;align-items:center;border-radius:22px;background:#f6e7d0;color:#6a4d35}.person:nth-child(2){background:#e1ecdf;color:#365e4a}.person:nth-child(3){background:#e1eafa;color:#3c5779}.person:nth-child(4){background:#f5e2e5;color:#87505b}.face{font-size:2.8rem;line-height:1.3}.person span:last-child{font-size:.88rem;font-weight:750}.checkin{display:flex;align-items:center;gap:13px;margin-top:18px;padding:14px 16px;border:1px solid var(--line);border-radius:17px}.check-icon{display:grid;place-items:center;width:40px;height:40px;flex:none;border-radius:13px;background:var(--sage);font-size:1.2rem}.checkin strong{display:block;font-size:.95rem}.checkin small{color:var(--muted)}.floating-note{position:absolute;right:-6px;bottom:18px;padding:14px 17px;border-radius:17px;background:#fff;box-shadow:var(--shadow);font-size:.9rem;font-weight:750;transform:rotate(-3deg)}.section{padding:82px 0}.section.white{background:#fff}.section-head{max-width:690px;margin:0 auto 42px;text-align:center}.section-head h2{margin:12px 0 14px;font-size:clamp(2rem,4vw,3rem);line-height:1.12;letter-spacing:-.05em}.section-head p{color:var(--muted);font-size:1.08rem}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.feature{padding:28px;border:1px solid var(--line);border-radius:24px;background:#fff}.white .feature{background:var(--cream)}.feature-icon{display:grid;place-items:center;width:56px;height:56px;margin-bottom:19px;border-radius:18px;background:var(--sage);font-size:1.6rem}.feature h3{margin-bottom:9px;font-size:1.25rem;letter-spacing:-.025em}.feature p{margin-bottom:0;color:var(--muted);font-size:1rem}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;counter-reset:step}.step{position:relative;padding:4px 12px 10px 0}.step:before{counter-increment:step;content:"0" counter(step);display:grid;place-items:center;width:48px;height:48px;margin-bottom:19px;border-radius:16px;background:var(--green);color:#fff;font-weight:850}.step h3{margin-bottom:8px}.step p{color:var(--muted);font-size:1rem}.promise{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center;padding:40px;border-radius:30px;background:var(--sage)}.promise h2{margin:12px 0;font-size:clamp(2rem,3.6vw,2.8rem);line-height:1.13;letter-spacing:-.05em}.promise p{color:var(--muted)}.promise-list{display:grid;grid-template-columns:1fr 1fr;gap:14px}.promise-item{display:flex;align-items:flex-start;gap:10px;font-weight:650;font-size:1rem}.tick{color:var(--green-dark);font-weight:900}.faq{max-width:800px;margin:auto}.faq details{padding:20px 0;border-bottom:1px solid var(--line)}.faq summary{cursor:pointer;font-weight:750;font-size:1.08rem}.faq details p{margin:12px 0 0;color:var(--muted)}.cta{padding:54px 32px;text-align:center;border-radius:30px;background:var(--ink);color:#fff}.cta h2{margin:0 0 14px;font-size:clamp(2rem,4vw,3rem);letter-spacing:-.05em}.cta p{max-width:650px;margin:0 auto 25px;color:#d9e4dd}.cta .btn{background:#fff;border-color:#fff;color:var(--ink)}.cta .btn:hover{background:#edf5e9}.footer{padding:36px 0 28px}.footer-main{display:flex;justify-content:space-between;align-items:center;gap:25px;padding-bottom:22px;border-bottom:1px solid var(--line)}.footer p,.footer a{color:var(--muted);font-size:.9rem}.footer-links{display:flex;flex-wrap:wrap;gap:18px}.footer-links a{text-decoration:none}.fineprint{padding-top:17px;color:var(--muted);font-size:.8rem}.notice{display:none;margin-top:15px;padding:16px 18px;border:1px solid #c8d9ca;border-radius:16px;background:#fff;color:var(--ink);font-size:.96rem}.notice.show{display:block}.notice ol{padding-left:23px;margin-bottom:0}.notice p{margin-bottom:8px}.notice button{border:0;background:transparent;text-decoration:underline;color:var(--green-dark);font:inherit;font-weight:700;cursor:pointer}.icon{width:19px;height:19px}
+    .nest-builder{max-width:850px;margin:auto;padding:clamp(24px,5vw,42px);border:1px solid var(--line);border-radius:30px;background:#fff;box-shadow:var(--shadow)}
+    .nest-builder h2{margin:12px 0;font-size:clamp(2rem,4vw,3rem);line-height:1.12;letter-spacing:-.05em}
+    .nest-builder .intro{max-width:650px;color:var(--muted)}
+    .nest-form{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+    .field{display:flex;flex-direction:column;gap:7px;text-align:left}
+    .field.full{grid-column:1/-1}
+    .field label{font-weight:750;font-size:.95rem}
+    .field input,.field select{width:100%;min-height:54px;padding:12px 14px;border:1px solid #bac9be;border-radius:13px;background:#fff;color:var(--ink);font:inherit}
+    .field input:focus,.field select:focus{outline:3px solid #b6d2bd;outline-offset:2px}
+    .helper{color:var(--muted);font-size:.84rem}
+    .nest-dashboard{display:none;margin-top:28px;padding-top:25px;border-top:1px solid var(--line)}
+    .nest-dashboard.show{display:block}
+    .nest-header{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+    .nest-header h3{margin:0;font-size:1.5rem}
+    .invite-form{display:grid;grid-template-columns:1fr 1fr auto;gap:10px;margin:18px 0}
+    .invite-form input,.invite-form select{min-width:0;min-height:52px;padding:10px 12px;border:1px solid #bac9be;border-radius:12px;background:#fff;color:var(--ink);font:inherit}
+    .member-list{display:grid;gap:10px;margin-top:18px}
+    .member{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border:1px solid var(--line);border-radius:15px;background:var(--cream)}
+    .member strong{display:block}.member small{display:block;color:var(--muted);overflow-wrap:anywhere}
+    .remove-member{border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);padding:8px 11px;font:inherit;cursor:pointer}
+    .prototype-warning{margin-top:18px;padding:15px;border-radius:14px;background:#fff3d9;color:#674b1c;font-size:.9rem}
     .checkin-panel{max-width:790px;margin:auto;padding:clamp(24px,5vw,46px);border:1px solid var(--line);border-radius:30px;background:#fff;box-shadow:var(--shadow);text-align:center}
     .checkin-panel h2{margin:12px 0;font-size:clamp(2rem,4vw,3rem);line-height:1.12;letter-spacing:-.05em}
     .checkin-panel>p{max-width:570px;margin:0 auto 22px;color:var(--muted)}
@@ -27,7 +48,7 @@
     .checkin-result p{margin:0;color:var(--muted)}
     .checkin-meta{margin-top:14px!important;font-size:.88rem}
     .checkin-reset{margin-top:12px;padding:8px 0;border:0;background:transparent;color:var(--green-dark);font:inherit;font-weight:700;text-decoration:underline;cursor:pointer}
-    @media(max-width:620px){.checkin-actions{grid-template-columns:1fr}.checkin-choice{min-height:72px}}
+    @media(max-width:620px){.checkin-actions{grid-template-columns:1fr}.checkin-choice{min-height:72px}.nest-form{grid-template-columns:1fr}.field.full{grid-column:auto}.invite-form{grid-template-columns:1fr}.nest-header{align-items:flex-start}.member{align-items:flex-start}}
     @media(max-width:850px){.hero-grid{grid-template-columns:1fr;gap:25px}.hero{padding-top:55px}.hero-copy{text-align:center}.hero-copy .lead{margin-inline:auto}.hero-copy .eyebrow{justify-content:center}.actions{justify-content:center}.hero-art{min-height:390px}.cards{grid-template-columns:1fr 1fr}.promise{grid-template-columns:1fr;gap:18px}.navlinks{gap:14px}.navlinks a{font-size:.85rem}}
     @media(max-width:620px){body{font-size:17px}.wrap{width:min(100% - 30px,1120px)}.nav{min-height:68px}.menu-toggle{display:block}.navlinks{display:none;position:absolute;left:0;right:0;top:68px;padding:16px 22px 22px;background:var(--cream);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.navlinks a{padding:8px 0;font-size:1rem}.navlinks .btn{margin-top:5px}.hero{padding:43px 0 50px}h1{font-size:clamp(2.6rem,12vw,3.6rem)}.lead{font-size:1.08rem}.hero-art{min-height:350px}.nest-card{padding:19px;border-radius:24px}.person{min-height:112px}.face{font-size:2.3rem}.floating-note{right:0;bottom:0}.section{padding:60px 0}.cards,.steps{grid-template-columns:1fr}.feature{padding:24px}.promise{padding:26px 22px}.promise-list{grid-template-columns:1fr}.cta{padding:40px 22px}.footer-main{align-items:flex-start;flex-direction:column;gap:12px}.actions .btn{width:100%}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
@@ -40,7 +61,7 @@
       <a class="brand" href="#home" aria-label="EverNest home"><img src="./icon.svg" alt="">EverNest</a>
       <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
       <nav class="navlinks" id="navLinks" aria-label="Main navigation">
-        <a href="#features">What it can do</a><a href="#checkin">Daily check-in</a><a href="#how">How it works</a><a href="#privacy">Our approach</a><a href="#faq">Questions</a>
+        <a href="#features">What it can do</a><a href="#create-nest">Create a Nest</a><a href="#checkin">Daily check-in</a><a href="#how">How it works</a><a href="#privacy">Our approach</a><a href="#faq">Questions</a>
         <button class="btn" id="navInstall" type="button">Add EverNest</button>
       </nav>
     </div>
@@ -54,6 +75,7 @@
           <p class="lead">EverNest is a welcoming place for families to stay in touch, share everyday moments, and make looking out for one another feel a little simpler.</p>
           <div class="actions"><button class="btn" id="heroInstall" type="button">＋ Add EverNest to this device</button><a class="btn secondary" href="#features">Explore EverNest <span aria-hidden="true">↓</span></a></div>
           <p class="micro">Designed around people, not complicated menus.</p>
+          <div class="actions" style="margin-top:14px"><a class="btn secondary" href="#create-nest">＋ Create your family Nest</a></div>
           <div class="notice" id="installNotice" role="status" aria-live="polite"></div>
         </div>
         <div class="hero-art" aria-label="Illustration of a family staying connected">
@@ -84,6 +106,34 @@
           <article class="feature"><div class="feature-icon" aria-hidden="true">🔎</div><h3>Understand technology</h3><p>Offer friendly guidance and plain-language tips that help digital life feel less intimidating.</p></article>
         </div>
         <p class="micro" style="text-align:center;margin:25px 0 0">EverNest is currently a website starting point. Feature descriptions are goals, not claims that every feature is available today.</p>
+      </div>
+    </section>
+    <section class="section white" id="create-nest">
+      <div class="wrap">
+        <div class="nest-builder">
+          <span class="eyebrow">Bring your people together</span>
+          <h2>Create your Nest</h2>
+          <p class="intro">Start a family space and add the people you would like to stay connected with. This first version is a local demo so you can try the flow before secure accounts and real invitations are connected.</p>
+          <form id="nestForm" class="nest-form">
+            <div class="field"><label for="nestName">Name for your Nest</label><input id="nestName" name="nestName" maxlength="60" placeholder="e.g. The Marlow Family" required></div>
+            <div class="field"><label for="ownerName">Your name</label><input id="ownerName" name="ownerName" maxlength="80" autocomplete="name" placeholder="How should we call you?" required></div>
+            <div class="field"><label for="ownerContact">Your email or phone</label><input id="ownerContact" name="ownerContact" maxlength="120" autocomplete="email" placeholder="For the future account setup" required><span class="helper">Demo only: don't enter sensitive information.</span></div>
+            <div class="field"><label for="nestPurpose">What is this Nest for?</label><select id="nestPurpose" name="nestPurpose"><option>Family check-ins</option><option>Keeping in touch</option><option>Coordinating care</option><option>Friends and community</option></select></div>
+            <div class="field full"><button class="btn" type="submit">Create my Nest</button></div>
+          </form>
+          <div class="nest-dashboard" id="nestDashboard" aria-live="polite">
+            <div class="nest-header"><div><span class="eyebrow">Your space</span><h3 id="dashboardNestName">Your Nest</h3><p class="micro" id="dashboardOwner"></p></div><button class="btn secondary" id="editNest" type="button">Edit Nest details</button></div>
+            <h3 style="margin-top:24px">Add people to your Nest</h3>
+            <p class="micro">Add an email address or phone number to prepare an invitation. In this demo, no message is sent and nobody else can join yet.</p>
+            <form class="invite-form" id="inviteForm">
+              <input id="inviteContact" name="inviteContact" maxlength="120" placeholder="Email address or phone" aria-label="Invitee email address or phone number" required>
+              <select id="inviteMethod" name="inviteMethod" aria-label="Contact method"><option value="email">Email invitation</option><option value="phone">Text message invitation</option></select>
+              <button class="btn" type="submit">Add person</button>
+            </form>
+            <div class="member-list" id="memberList"></div>
+            <div class="prototype-warning"><strong>Important:</strong> This is a browser-only prototype. Nest details and invitees are saved on this device, not in a real account. Invitations are not delivered, and information won't sync to another device. Don't use real contact details until secure account and invitation services are implemented.</div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="section" id="checkin">
@@ -130,6 +180,7 @@
       <div class="wrap">
         <div class="section-head"><span class="eyebrow">Good to know</span><h2>Questions, answered simply.</h2></div>
         <div class="faq">
+          <details><summary>Can I create a Nest and invite family?</summary><p>You can try the Create a Nest demo, but real accounts, delivered email/text invitations, and cross-device family sharing are not connected yet. The demo stores information only in the current browser.</p></details>
           <details><summary>Is EverNest an app yet?</summary><p>EverNest is starting as a website you can add to your device. The daily check-in saves your choice locally in this browser only; it does not send alerts or share the result with family members.</p></details>
           <details><summary>How do I add EverNest to my phone?</summary><p>Tap “Add EverNest to this device.” If your browser supports installation, it will offer the install prompt. On iPhone or iPad, open the site in Safari, tap Share, then choose “Add to Home Screen.” On Android, open the browser menu and look for “Install app” or “Add to Home screen.” Menu wording varies by browser.</p></details>
           <details><summary>Will the shortcut work on a computer?</summary><p>On supported desktop browsers, the button may offer an install option. Otherwise, bookmark the page or use your browser's option to create an app shortcut if available.</p></details>
@@ -171,6 +222,46 @@
       showNotice(instructions);
     }
     ['heroInstall','navInstall','bottomInstall'].forEach(id=>document.getElementById(id).addEventListener('click',addShortcut));
+    // Nest setup and invite list are a local-only prototype; no credentials are collected.
+    const nestForm=document.getElementById('nestForm');
+    const nestDashboard=document.getElementById('nestDashboard');
+    const nestStorageKey='evernest-nest-demo-v1';
+    let nestState=null;
+    function loadNest(){try{nestState=JSON.parse(localStorage.getItem(nestStorageKey)||'null');}catch(error){nestState=null;}renderNest();}
+    function saveNest(){try{localStorage.setItem(nestStorageKey,JSON.stringify(nestState));return true;}catch(error){alert('Your browser could not save this demo. Please check browser storage settings.');return false;}}
+    function renderNest(){
+      if(!nestState){nestDashboard.classList.remove('show');nestForm.hidden=false;return;}
+      nestForm.hidden=true;nestDashboard.classList.add('show');
+      document.getElementById('dashboardNestName').textContent=nestState.nestName;
+      document.getElementById('dashboardOwner').textContent='Created by '+nestState.ownerName+' · '+nestState.purpose;
+      const list=document.getElementById('memberList');list.innerHTML='';
+      if(!nestState.members.length){const empty=document.createElement('p');empty.className='micro';empty.textContent='No people added yet. You can add someone above.';list.appendChild(empty);return;}
+      nestState.members.forEach((member,index)=>{
+        const row=document.createElement('div');row.className='member';
+        const details=document.createElement('div');const name=document.createElement('strong');name.textContent=member.contact;
+        const meta=document.createElement('small');meta.textContent=(member.method==='email'?'Email invitation':'Text message invitation')+' · Not sent';
+        details.append(name,meta);const remove=document.createElement('button');remove.className='remove-member';remove.type='button';remove.textContent='Remove';remove.setAttribute('aria-label','Remove '+member.contact);
+        remove.addEventListener('click',()=>{nestState.members.splice(index,1);saveNest();renderNest();});row.append(details,remove);list.appendChild(row);
+      });
+    }
+    nestForm.addEventListener('submit',event=>{
+      event.preventDefault();
+      nestState={nestName:document.getElementById('nestName').value.trim(),ownerName:document.getElementById('ownerName').value.trim(),ownerContact:document.getElementById('ownerContact').value.trim(),purpose:document.getElementById('nestPurpose').value,members:[]};
+      if(!nestState.nestName||!nestState.ownerName||!nestState.ownerContact)return;
+      if(saveNest()){renderNest();document.getElementById('create-nest').scrollIntoView({behavior:'smooth'});}
+    });
+    document.getElementById('inviteForm').addEventListener('submit',event=>{
+      event.preventDefault();if(!nestState)return;
+      const contact=document.getElementById('inviteContact').value.trim();if(!contact)return;
+      const method=document.getElementById('inviteMethod').value;
+      const duplicate=nestState.members.some(m=>m.contact.toLowerCase()===contact.toLowerCase());
+      if(duplicate){alert('That contact has already been added to this Nest.');return;}
+      nestState.members.push({contact,method});if(saveNest()){document.getElementById('inviteContact').value='';renderNest();}
+    });
+    document.getElementById('editNest').addEventListener('click',()=>{
+      document.getElementById('nestName').value=nestState.nestName;document.getElementById('ownerName').value=nestState.ownerName;document.getElementById('ownerContact').value=nestState.ownerContact;document.getElementById('nestPurpose').value=nestState.purpose;nestForm.hidden=false;nestDashboard.classList.remove('show');
+    });
+    loadNest();
     // Daily check-ins stay on this device and are not transmitted.
     const checkinResult=document.getElementById('checkinResult');
     const checkinStorageKey='evernest-daily-checkin-v1';
